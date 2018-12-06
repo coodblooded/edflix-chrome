@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "EdFlix",
   "description": "Converting the EdFlix extension to popup",
-  "version": "0.1",
+  "version": "0.2",
   "background": {
     "scripts": [ "background.js" ]
   },
@@ -11,6 +11,16 @@
     "default_icon": "edflix.png",
     "default_popup": "edflix.html"
   },
-  "permissions": [ "storage", "tabs" ],
+  "permissions": [
+     "storage",
+      "tabs",
+      "cookies",
+      "bookmarks",
+      "webRequest",
+      "*://*.localhost/",
+      "*://*.13.127.38.120/",
+      "*://*.edtechdiary.com/",
+      "unlimitedStorage"
+     ],
   "web_accessible_resources": [ "templates/*" ]
 }
